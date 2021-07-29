@@ -25,8 +25,9 @@ O passo 3 em um servidor Xeon com 2 cpus, demora cerca de 15 segundos para reali
 http://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-amplos/indice-brasil-100-ibrx-100-composicao-da-carteira.htm
 ```
 3. Atualizar a grade de opções listadas na B3, baixando atraves do link abaixo. E antes de usar, apagar a primeira linha do arquivo.
+```
 http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-a-vista/opcoes/series-autorizadas/
-
+```
 4. rodar o script atraves do comando.
 ```
     python mt5-option.py
