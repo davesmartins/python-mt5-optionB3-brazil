@@ -1,14 +1,14 @@
 {
     "sql": {
-        "host": "bancodedados-monext-do-user-8555553-0.b.db.ondigitalocean.com",
-        "user": "doadmin",
-        "password": "ikcwm86brlj8selq",
-        "db": "OptionsTrade",
-        "port": "25060"
+        "host": "",
+        "user": "",
+        "password": "",
+        "db": "",
+        "port": ""
     },
     "mt5":{
-        "account":1656890,
-        "password":"z4x5c623",
-        "server": "ModalMais-DMA4 - Beta"
+        "account":"",
+        "password":"",
+        "server": ""
     }
 }
