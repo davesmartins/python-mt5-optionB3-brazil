@@ -27,6 +27,9 @@ http://www.b3.com.br/pt_br/market-data-e-indices/indices/indices-amplos/indice-b
 3. Atualizar a grade de opções listadas na B3, baixando atraves do link abaixo. E antes de usar, apagar a primeira linha do arquivo.
 ```
 http://www.b3.com.br/pt_br/market-data-e-indices/servicos-de-dados/market-data/consultas/mercado-a-vista/opcoes/series-autorizadas/
+
+https://www.b3.com.br/lumis/portal/file/fileDownload.jsp?fileId=8AE490CA84BE435F01857EEDC7303EAE
+
 ```
 4. rodar o script atraves do comando.
 ```

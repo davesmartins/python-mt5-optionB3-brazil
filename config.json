@@ -7,8 +7,15 @@
         "port": ""
     },
     "mt5":{
-        "account":"",
-        "password":"",
-        "server": ""
+        "account":901367912,
+        "password":"Sev@d120978",
+        "server": "OramaDTVM-Server"
+    },
+    "telegram":{
+        "token":"5817257324:AAGRytcfELAe43Lpe0w_TFa2jAm4BcVn8V8",
+        "chatID":"-625791792"
     }
 }
+
+
+
