@@ -1,0 +1,54 @@
+{
+    "sql": {
+        "host": "",
+        "user": "",
+        "password": "",
+        "db": "",
+        "port": ""
+    },
+    "mt5": {
+        "account":901367912,
+        "password":"Ftgh173z-",
+        "server": "OramaDTVM-Server"
+    },
+    "mt5-btg": {
+        "account":3882481,
+        "password":"Ftgh173z-",
+        "server": "BancoBTGPactual-PRD"
+    },
+    "telegram": {
+        "token": "6107532977:AAE3GMixQILS9o-E2610Mdfy7cOCctevCOM",
+        "url": "t.me/MarketMindBot",
+        "AdminId": "992882514",
+        "Bot_ID": "6107532977",
+        "chatID": "-625791792",
+        "grupos": [
+        ]
+    },
+    "operacao":{
+        "box3PontasComprado":{
+            "qtde":100,
+            "spread": 0.02
+        },
+        "SBTH":{
+            "qtde":100,
+            "ganho": 0.10
+        }
+
+    },
+    "acoes": [
+        "PETR4",
+        "ABEV3",
+        "B3SA3",
+        "BBDC4",
+        "ITUB4",
+        "BBAS3",
+        "MRFG3",
+        "CMIG4",
+        "NTCO3",
+        "ITSA4",
+        "BEEF3",
+        "COGN3",
+        "USIM5"
+    ]
+}

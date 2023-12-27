@@ -1,0 +1,39 @@
+{
+    "sql": {
+        "host": "",
+        "user": "",
+        "password": "",
+        "db": "",
+        "port": ""
+    },
+    "mt5":{
+        "account":901367912,
+        "password":"Sev@d120978",
+        "server": "OramaDTVM-Server"
+    },
+    "telegram":{
+        "token":"6107532977:AAE3GMixQILS9o-E2610Mdfy7cOCctevCOM",
+        "url": "t.me/MarketMindBot",
+        "AdminId": "992882514",
+        "Bot_ID":  "6107532977",
+        "chatID":"-625791792",
+        "grupos": []
+    },
+    "acoes": [
+        "PETR4",
+        "ABEV3",
+        "USIM5",
+        "COGN3",
+        "BBDC4",
+        "B3SA3",
+        "BBAS3",
+        "MRFG3",
+        "BOVA11",
+        "NTCO3",
+        "CMIG4",
+        "GGBR4"
+    ]
+}
+
+
+

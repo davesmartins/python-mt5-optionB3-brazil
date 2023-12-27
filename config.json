@@ -6,16 +6,21 @@
         "db": "",
         "port": ""
     },
-    "mt5":{
-        "account":901367912,
-        "password":"Sev@d120978",
-        "server": "OramaDTVM-Server"
+    "mt5": {
+        "account":"3882481",
+        "password":"Ftgh173z-",
+        "server": "BancoBTGPactual-PRD"
     },
     "telegram":{
-        "token":"5817257324:AAGRytcfELAe43Lpe0w_TFa2jAm4BcVn8V8",
-        "chatID":"-625791792"
+        "token":"6107532977:AAE3GMixQILS9o-E2610Mdfy7cOCctevCOM",
+        "chatID":"-380582947"
     }
 }
+
+
+
+
+
 
 
 

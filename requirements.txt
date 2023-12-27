@@ -2,5 +2,10 @@ SQLAlchemy
 psycopg2-binary
 pandas
 numpy
+beautifulsoup4==4.4.1
+yfinance
 MetaTrader5
-zipfile
+telebot
+scipy
+py_vollib
+python-dateutil

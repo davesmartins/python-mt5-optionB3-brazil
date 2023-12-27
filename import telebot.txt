@@ -1,0 +1,53 @@
+import telebot
+from MetaTrader5 import *
+from py_vollib.black_scholes import black_scholes
+from py_vollib.black_scholes.implied_volatility import implied_volatility
+
+# Configurar o MetaTrader 5
+MT5Initialize()
+MT5WaitForTerminal()
+
+# Configurar o bot do Telegram
+bot_token = 'TOKEN_DO_SEU_BOT'
+bot = telebot.TeleBot(bot_token)
+
+# Lidar com a mensagem recebida no bot do Telegram
+@bot.message_handler(func=lambda message: True)
+def handle_message(message):
+    # Verificar se a mensagem contém um comando válido
+    if message.text.startswith('/box3pontas'):
+        # Extrair o código da ação da mensagem
+        symbol = message.text.split()[1]
+
+        # Obter o preço atual da ação
+        rates = MT5CopyRates(symbol, MT5_TIMEFRAME_M1, 0, 1)
+        if len(rates) > 0:
+            current_price = rates[0].close
+
+            # Calcular o "box de 3 pontas" com opções
+            call_option_price = calculate_option_price(symbol, current_price, 'call')
+            put_option_price = calculate_option_price(symbol, current_price, 'put')
+
+            # Comparar com o CDI
+            if call_option_price + put_option_price > get_cdi_rate():
+                bot.reply_to(message, f'O "box de 3 pontas" com opções para {symbol} bate o CDI.')
+            else:
+                bot.reply_to(message, f'O "box de 3 pontas" com opções para {symbol} não bate o CDI.')
+        else:
+            bot.reply_to(message, f'Não foi possível obter o preço atual de {symbol}.')
+
+# Função para calcular o preço de uma opção usando o modelo Black-Scholes
+def calculate_option_price(symbol, underlying_price, option_type):
+    # Implemente aqui a lógica para calcular o preço da opção usando o modelo Black-Scholes
+    # Exemplo de uso da função black_scholes da biblioteca py_vollib:
+    option_price = black_scholes(option_type, underlying_price, 100, 0.05, 0.3, 30/365)
+
+    return option_price
+
+# Função para obter a taxa atual do CDI (exemplo fictício)
+def get_cdi_rate():
+    # Implemente aqui a lógica para obter a taxa atual do CDI
+    return 5.0
+
+# Iniciar o bot do Telegram
+bot.polling()

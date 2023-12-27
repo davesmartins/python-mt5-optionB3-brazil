@@ -1,4 +1,5 @@
-## MetaTrader 5 Option Tick a Tick B3 Brazil
+## MetaTrader 5 Option
+
 
 ### O que é?
 
